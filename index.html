@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog — Jelajah Dunia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">Jelajah<span> Dunia</span></div>
+      <nav class="main-nav">
+        <a href="#">Home</a>
+        <a href="#destinasi">Destinasi</a>
+        <a href="#tips">Tips</a>
+        <a href="#about">Tentang</a>
+      </nav>
+      <button class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1>Selamat Datang di <strong>Jelajah Dunia</strong></h1>
+        <p>Temukan cerita perjalanan, tips liburan, dan destinasi impian dari berbagai belahan dunia.</p>
+        <a class="btn" href="#destinasi">Lihat Destinasi</a>
+      </div>
+      <div class="hero-image"></div>
+    </div>
+  </section>
+
+  <main class="container main-grid">
+  
+    <section class="posts">
+      <h2 id="destinasi">Destinasi Populer</h2>
+      <div class="grid">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Pantai Bali">
+          <div class="card-body">
+            <h3>Pantai Bali</h3>
+            <p class="meta">oleh Andi • 10 Sep 2025</p>
+            <p>
+              Nikmati matahari terbenam yang menakjubkan dan pasir putih lembut di pantai-pantai Bali.
+              <span class="more-text" style="display:none;">
+                Selain panorama indah, Bali juga menawarkan budaya yang kaya, pura bersejarah, dan kuliner khas yang memanjakan lidah.
+              </span>
+            </p>
+            <a href="#" class="read-more" onclick="toggleText(event, this)">Baca selengkapnya →</a>
+          </div>
+        </article>
+
+        <script>
+        function toggleText(event, link) {
+          event.preventDefault(); 
+          const moreText = link.parentElement.querySelector('.more-text');
+  
+          if (moreText.style.display === "none") {
+           moreText.style.display = "inline";
+           link.textContent = "Sembunyikan ↑";
+          } else {
+            moreText.style.display = "none";
+            link.textContent = "Baca selengkapnya →";
+          }
+        }
+        </script>
+
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=800&q=60" alt="Gunung Bromo">
+          <div class="card-body">
+            <h3>Gunung Bromo</h3>
+            <p class="meta">oleh Siti • 5 Sep 2025</p>
+            <p>
+              Petualangan mendaki Bromo dan melihat sunrise dengan panorama menakjubkan.
+              <span class="more-text" style="display:none;">
+                Dari puncak Penanjakan, pengunjung bisa menyaksikan matahari terbit dengan latar Gunung Semeru yang megah. 
+                Suasana dingin berpadu dengan lautan pasir menjadikan pengalaman tak terlupakan.
+              </span>
+            </p>
+            <a href="#" class="read-more" onclick="toggleText(event, this)">Baca selengkapnya →</a>
+          </div>
+        </article>
+
+        <script>
+        function toggleText(event, link) {
+          event.preventDefault(); 
+          const moreText = link.parentElement.querySelector('.more-text');
+  
+          if (moreText.style.display === "none") {
+           moreText.style.display = "inline";
+           link.textContent = "Sembunyikan ↑";
+          } else {
+            moreText.style.display = "none";
+            link.textContent = "Baca selengkapnya →";
+          }
+        }
+        </script>
+
+
+
+       <article class="card">
+         <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=60" alt="Raja Ampat">
+         <div class="card-body">
+           <h3>Raja Ampat</h3>
+           <p class="meta">oleh Rina • 1 Sep 2025</p>
+           <p>
+             Surga bawah laut dengan keanekaragaman hayati laut terbaik di dunia.
+             <span class="more-text" style="display:none;">
+               Raja Ampat terkenal dengan lebih dari 1.500 pulau kecil, laguna biru, dan terumbu karang yang masih alami. 
+               Tempat ini merupakan destinasi favorit para penyelam internasional karena keindahan bawah lautnya yang menakjubkan.
+             </span>
+           </p>
+           <a href="#" class="read-more" onclick="toggleText(event, this)">Baca selengkapnya →</a>
+         </div>
+       </article>
+
+       <script>
+       function toggleText(event, link) {
+         event.preventDefault(); 
+         const moreText = link.parentElement.querySelector('.more-text');
+  
+         if (moreText.style.display === "none") {
+           moreText.style.display = "inline";
+           link.textContent = "Sembunyikan ↑";
+         } else {
+           moreText.style.display = "none";
+           link.textContent = "Baca selengkapnya →";
+         }
+       }
+       </script>
+
+
+      <h2 id="tips">Tips Perjalanan</h2>
+      <div class="list-posts">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1523413651479-597eb2da0ad6?auto=format&fit=crop&w=800&q=60" alt="Tips Packing">
+          <div class="card-body">
+            <h3>Tips Packing Efisien</h3>
+            <p class="meta">oleh Budi • 28 Agu 2025</p>
+            <p>Cara packing ringan tanpa meninggalkan barang penting saat liburan.</p>
+            <a class="read-more" href="#">Baca selengkapnya →</a>
+          </div>
+        </article>
+
+        <article class="list-item">
+          <img src="https://images.unsplash.com/photo-1526772662000-3f88f10405ff?auto=format&fit=crop&w=400&q=60" alt="Budget Travel">
+          <div>
+            <h4>Liburan Hemat Ala Backpacker</h4>
+            <p class="meta">oleh Maya • 20 Agu 2025</p>
+            <p>Strategi perjalanan hemat biaya tanpa mengurangi keseruan.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="search">
+        <input type="search" placeholder="Cari destinasi atau tips...">
+      </div>
+
+      <div class="widget">
+        <h3>Kategori</h3>
+        <ul>
+          <li><a href="#">Pantai</a></li>
+          <li><a href="#">Gunung</a></li>
+          <li><a href="#">Backpacker</a></li>
+          <li><a href="#">Kuliner</a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>Artikel Populer</h3>
+        <ol>
+          <li><a href="#">10 Tips Traveling Murah</a></li>
+          <li><a href="#">Panduan Backpacker Eropa</a></li>
+          <li><a href="#">Destinasi Ramah Keluarga</a></li>
+        </ol>
+      </div>
+    </aside>
+  </main>
+
+  <section id="about" class="about container">
+    <h2>Tentang Jelajah Dunia</h2>
+    <p>Jelajah Dunia adalah blog perjalanan yang membagikan pengalaman, tips, dan inspirasi destinasi dari berbagai tempat di dunia. Kami percaya bahwa perjalanan adalah cara terbaik untuk memperkaya hidup.</p>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2025 Jelajah Dunia — Dibuat untuk para petualang.</p>
+      <nav class="social">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">TikTok</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>
